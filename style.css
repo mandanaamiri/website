@@ -15,7 +15,6 @@ body {
     height: 100%;
     background-color: var(--main-bg);
     font-family: "MyFont", sans-serif;
-    direction: rtl;
     padding: 20px;
     border-bottom: 2px solid;
 }
@@ -104,6 +103,17 @@ form button {
 
 form button:hover {
     background-color: #005fa3;
+}
+
+main,
+figure,
+dl,
+ul,
+form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    direction: rtl;
 }
 
 main {
@@ -256,5 +266,6 @@ footer {
     }
 
 }
+
 
 
