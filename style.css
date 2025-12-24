@@ -132,6 +132,16 @@ main p {
     direction: rtl;
 }
 
+main,
+figure,
+form,
+dl,
+ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+;
+
 figure {
     display: flex;
     flex-direction: column;
@@ -267,3 +277,4 @@ footer {
     }
 
 }
+
