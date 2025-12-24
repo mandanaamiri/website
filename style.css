@@ -10,15 +10,6 @@
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main h2,
-main p,
-figure figcaption,
-dl dt,
-dl dd,
-ul li {
-    text-align: center;
-}
-
 body {
     text-align: center;
     height: 100%;
@@ -122,6 +113,7 @@ main {
     margin-top: 30px;
     padding: 20px;
     overflow: auto;
+    justify-items: center;
 }
 
 main h2,
@@ -167,6 +159,7 @@ dt {
     padding: 10px;
     border-radius: 6px;
     box-shadow: var(--shadow);
+    justify-items: center;
 }
 
 dd {
@@ -186,6 +179,7 @@ ul {
     margin: 20px auto;
     padding: 0;
     overflow: auto;
+    justify-items: center;
 }
 
 ul li {
@@ -260,3 +254,4 @@ footer {
     }
 
 }
+
