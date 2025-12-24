@@ -122,6 +122,8 @@ main p {
     padding: 15px;
     border-radius: 8px;
     box-shadow: var(--shadow);
+    width: fit-content;
+    max-width: 90%; 
 }
 
 figure {
@@ -254,4 +256,5 @@ footer {
     }
 
 }
+
 
