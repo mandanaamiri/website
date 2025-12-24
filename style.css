@@ -11,18 +11,22 @@
 }
 
 body {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers children horizontally */
+    text-align: center;    /* keeps inline text centered */
     height: 100%;
+    min-height: 100vh;
     background-color: var(--main-bg);
     font-family: "MyFont", sans-serif;
     padding: 20px;
     border-bottom: 2px solid;
-    align-items: center;
 }
 
 header h1 {
     font-size: medium;
     font-weight: bold;
+    direction: rtl;  /* keep text RTL */
 }
 
 nav ul {
@@ -69,7 +73,7 @@ form {
     border-radius: 8px;
     box-shadow: var(--shadow);
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px 0;   /* spacing vertically */
     overflow: auto;
 }
 
@@ -77,6 +81,7 @@ form label {
     font-weight: bold;
     margin-bottom: 5px;
     align-self: flex-start;
+    direction: rtl;
 }
 
 form input,
@@ -106,25 +111,14 @@ form button:hover {
     background-color: #005fa3;
 }
 
-main,
-figure,
-dl,
-ul,
-form {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    direction: rtl;
-}
-
 main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     margin-top: 30px;
     padding: 20px;
+    justify-items: center;  /* center grid items horizontally */
     overflow: auto;
-    justify-items: center;
 }
 
 main h2,
@@ -135,6 +129,7 @@ main p {
     box-shadow: var(--shadow);
     width: fit-content;
     max-width: 90%; 
+    direction: rtl;
 }
 
 figure {
@@ -146,7 +141,7 @@ figure {
     border-radius: 8px;
     box-shadow: var(--shadow);
     max-width: 300px;
-    margin: 0 auto;
+    margin: 20px 0;  /* spacing vertically */
     overflow: auto;
 }
 
@@ -154,6 +149,7 @@ figcaption {
     margin-top: 10px;
     line-height: 1.5;
     text-align: center;
+    direction: rtl;
 }
 
 dl {
@@ -161,7 +157,7 @@ dl {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 0;
-    margin: 0 auto;
+    margin: 20px 0 auto;  /* spacing vertically and center */
     max-width: 500px;
     overflow: auto;
 }
@@ -173,6 +169,7 @@ dt {
     border-radius: 6px;
     box-shadow: var(--shadow);
     justify-items: center;
+    direction: rtl;
 }
 
 dd {
@@ -181,19 +178,19 @@ dd {
     background-color: var(--card-bg);
     border-radius: 6px;
     box-shadow: var(--shadow);
+    direction: rtl;
 }
-
 
 ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 20px 0;  /* spacing vertically */
     padding: 0;
+    justify-content: center;  /* center flex items */
+    align-items: center;
     overflow: auto;
-    justify-items: center;
-    justify-content: center;
 }
 
 ul li {
@@ -201,6 +198,7 @@ ul li {
     border-radius: 6px;
     background-color: var(--card-bg);
     box-shadow: var(--shadow);
+    direction: rtl;
 }
 
 footer {
@@ -209,6 +207,7 @@ footer {
     margin-top: 40px;
     padding-top: 10px;
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    direction: rtl;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -268,7 +267,3 @@ footer {
     }
 
 }
-
-
-
-
